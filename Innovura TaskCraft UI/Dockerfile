@@ -7,16 +7,16 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["Innovura_TaskCraft_UI/Innovura_TaskCraft_UI.csproj", "Innovura_TaskCraft_UI/"]
-RUN dotnet restore "Innovura_TaskCraft_UI/Innovura_TaskCraft_UI.csproj"
+COPY ["InnovuraTaskCraftUI/InnovuraTaskCraftUI.csproj", "InnovuraTaskCraftUI/"]
+RUN dotnet restore "InnovuraTaskCraftUI/InnovuraTaskCraftUI.csproj"
 COPY . .
-WORKDIR "/src/Innovura_TaskCraft_UI"
-RUN dotnet build "Innovura_TaskCraft_UI.csproj" -c Release -o /app/build
+WORKDIR "/src/InnovuraTaskCraftUI"
+RUN dotnet build "InnovuraTaskCraftUI.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "Innovura_TaskCraft_UI.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "InnovuraTaskCraftUI.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Innovura_TaskCraft_UI.dll"]
+ENTRYPOINT ["dotnet", "InnovuraTaskCraftUI.dll"]

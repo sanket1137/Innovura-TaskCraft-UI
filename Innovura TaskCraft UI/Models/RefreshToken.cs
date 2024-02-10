@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Innovura_TaskCraft_UI.Models
+namespace InnovuraTaskCraftUI.Models
 {
     public class RefreshToken
     {

@@ -1,8 +1,8 @@
-﻿using Innovura_TaskCraft_UI.Models;
+﻿using InnovuraTaskCraftUI.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace Innovura_TaskCraft_UI.Controllers
+namespace InnovuraTaskCraftUI.Controllers
 {
     public class HomeController : Controller
     {

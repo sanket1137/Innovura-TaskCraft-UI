@@ -1,4 +1,4 @@
-namespace Innovura_TaskCraft_UI.Models
+namespace InnovuraTaskCraftUI.Models
 {
     public class ErrorViewModel
     {

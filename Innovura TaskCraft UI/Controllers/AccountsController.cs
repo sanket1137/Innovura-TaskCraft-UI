@@ -1,5 +1,5 @@
 ﻿
-using Innovura_TaskCraft_UI.Models;
+using InnovuraTaskCraftUI.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -9,7 +9,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Innovura_TaskCraft.Controllers
+namespace InnovuraTaskCraftUI.Controllers
 {
 
     public class AccountsController : Controller
