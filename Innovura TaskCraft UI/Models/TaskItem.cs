@@ -15,11 +15,9 @@ namespace Innovura_TaskCraft_UI.Models
         public DateTime? StartedDate { get; set; }
         public DateTime? EndDate { get; set; }
 
-        // Foreign key for the associated label
         public int LabelId { get; set; }
         public Label Label { get; set; }
 
-        // Foreign key for the associated user
         public int UserId { get; set; }
         public User User { get; set; }
     }

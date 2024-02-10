@@ -1,0 +1,32 @@
+﻿/*add btn*/
+.btn-circle.btn-xl {
+    width: 40px;
+    height: 40px;
+    border-radius: 35px;
+    font-size: 20px;
+    margin-right:10px;
+}
+.action-bar {
+    padding: 0px 20px 20px;
+    display: flex;
+    align-items: center;
+}
+#selectedAction {
+    border-style: none;
+    border-radius: 10px;
+    width: 150px;
+    border: #d4d4d4 solid;
+}
+
+.gradient-custom-2 {
+    background: #fccb90;
+    background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+}
+
+.authbtn {
+    border-radius:initial;
+    border:none;
+    width:100%;
+}
+

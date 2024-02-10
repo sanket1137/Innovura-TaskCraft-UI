@@ -15,6 +15,7 @@ namespace Innovura_TaskCraft_UI.Models
 
         public ICollection<TaskItem> Tasks { get; set; }
         public ICollection<Label> Labels { get; set; }
+        public RefreshToken RefreshToken { get; set; }
     }
 
 }
